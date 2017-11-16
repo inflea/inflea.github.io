@@ -1,6 +1,6 @@
- body {
-    background: #383435;
-     font-family: 'Roboto', sans-serif, 'Libre Barcode 39 Text', cursive;
+body {
+  background: #383435;
+  font-family: 'Roboto', sans-serif, 'Libre Barcode 39 Text', cursive;
   font-weight: 300;
 }
  
@@ -8,25 +8,9 @@ header {
   padding: 20px 0;
 }
 
-header .row,
 footer .row {
   display: auto;
   color: white;
-}
-
-header h1 {
-  font-weight: 700;
-  margin: auto;
-}
-
-header nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-header p {
-  padding: 0 20px;
-  margin: auto;
 }
 
 .jumbotron {
@@ -34,6 +18,7 @@ header p {
   height: 400px;
   width: auto;
   text-align: center;
+  background: inherit;
   /*background: url(mxcwdrop.gif);*/
   /*background-size: 1200px 300px;*/
 }
@@ -41,7 +26,7 @@ header p {
 .jumbotron h2 {
   font-size: 200px;
   font-weight: 700;
-  color: darkgray;
+  color: white;
   font-family: 'Libre Barcode 39 Text', cursive;
   text-align: center;
   text-transform: uppercase;
@@ -50,13 +35,11 @@ header p {
 
 .jumbotron h3 {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.63);
+  color: grey;
   font-family: 'Questrial', sans-serif;
   text-align: center;
 }
-.squares {
-  text-align: center;
-}
+
 
 .SquareRow {
   text-align: center;
@@ -69,7 +52,27 @@ section .SquareRow img {
 	padding: 15px;
     text-align: center;
 	}
-
+	
+.SquareRow img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+	
 footer {
   font-size: 12px;
   padding: 20px 0;
@@ -101,46 +104,51 @@ hr {
     border-width: 1px;
 }
 
+a {
+	color: white;
+}
+
+a:hover{
+	background-color: pink;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #383435;
+	}
+
 .nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 2px;
     overflow: hidden;
 	display: inline-block;
 }
 
-.nav li {
+.nav li{
 	font-family: 'Dosis', sans-serif;
 	float:left;
 	}
 
-.nav li a {
+.nav li {
 	display:block;
 	text-align:center;
-	width:250px; /* fixed width */
-	text-decoration:none; 
-	font-size: 40px;
+	width:220px; /* fixed width */
+	font-size: 25px;
 	color: white;
 }
-
-.nav li a:hover {
-	background-color; yellow:
-}
-
 .nav {
-	width:750px;
+	width:900px;
 	height: 100px;
 	margin:0 auto;
-	list-style:none;
 }
+
 .Artspace {
 	display:inline-block;
 	width:1200px; /* fixed width */
 	height: 700px;
-	background: grey;
+	background: inherit;
 	border: 1em;
 	border-radius: 10px;
-	}
+}
 .Artspace h2 {
 	font-size: 80px;
 	font-family: 'Spectral SC', serif;
