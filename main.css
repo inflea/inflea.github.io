@@ -1,21 +1,22 @@
-body {
-  font-family: 'Roboto', sans-serif;
+ body {
+    background: #383435;
+     font-family: 'Roboto', sans-serif, 'Libre Barcode 39 Text', cursive;
   font-weight: 300;
 }
-
+ 
 header {
   padding: 20px 0;
 }
 
 header .row,
 footer .row {
-  display: flex;
-  align-items: center;
+  display: auto;
+  color: white;
 }
 
 header h1 {
   font-weight: 700;
-  margin: 0;
+  margin: auto;
 }
 
 header nav {
@@ -25,58 +26,49 @@ header nav {
 
 header p {
   padding: 0 20px;
-  margin: 0;
+  margin: auto;
 }
 
 .jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url('<img src="C:\Users\mAx\Desktop\Website\PHRENIC.PNG"/>');
-  background-size: cover;
-  color: #ffffff;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  display: block;
+  height: 400px;
+  width: auto;
+  text-align: center;
+  /*background: url(mxcwdrop.gif);*/
+  /*background-size: 1200px 300px;*/
 }
 
 .jumbotron h2 {
-  font-size: 60px;
+  font-size: 200px;
   font-weight: 700;
-  margin: 0;
-  color: #fff;
+  color: darkgray;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  /*background: transparent;*/
 }
 
 .jumbotron h3 {
-  margin: 0 0 20px;
-  color: pink;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.63);
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+}
+.squares {
+  text-align: center;
 }
 
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
+.SquareRow {
+  text-align: center;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-  border-radius: 5px;
-  border: 0px;
-  color: black;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: black;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
-}
+section .SquareRow img {
+	border-radius: 20px;
+	width: 250px;
+	height: 250px;
+	padding: 15px;
+    text-align: center;
+	}
 
 footer {
   font-size: 12px;
@@ -93,6 +85,72 @@ footer ul {
 }
 
 footer li img {
-  width: 32px;
-  height: 32px;
+	 width: 32px;
+	 height: 32px;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	display: inline-block;
+}
+
+.nav li {
+	font-family: 'Dosis', sans-serif;
+	float:left;
+	}
+
+.nav li a {
+	display:block;
+	text-align:center;
+	width:250px; /* fixed width */
+	text-decoration:none; 
+	font-size: 40px;
+	color: white;
+}
+
+.nav li a:hover {
+	background-color; yellow:
+}
+
+.nav {
+	width:750px;
+	height: 100px;
+	margin:0 auto;
+	list-style:none;
+}
+.Artspace {
+	display:inline-block;
+	width:1200px; /* fixed width */
+	height: 700px;
+	background: grey;
+	border: 1em;
+	border-radius: 10px;
+	}
+.Artspace h2 {
+	font-size: 80px;
+	font-family: 'Spectral SC', serif;
+	color: white;
+	padding: 30px;
+}	
+	
+.artspacesection{
+  display: block;
+  background: grey:
+  width: auto;
+  text-align: center;
 }
