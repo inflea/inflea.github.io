@@ -54,10 +54,10 @@ header, .mxcw {
   text-decoration: none;
   color: #FF0000;
   transition: .3s background-color;
-    }
+}
 
 .nav li {
-  font-size: 3em;
+  font-size: 2em;
   line-height: 40px;
   height: 40px;	
   font-family: 'Roboto', sans-serif;
@@ -65,9 +65,9 @@ header, .mxcw {
   color: black;
   background-color: transparent;
   display: inline-block;
-  width: auto;    
-  text-align: center;
+  width: auto;
   max-width: 100%;
+  padding: 30px;
 }
 
 .nav {
